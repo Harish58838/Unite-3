@@ -1,0 +1,9 @@
+# Array of integers sorted in ascending order
+arr = [2, 4, 6, 8, 10, 12, 14, 18]
+
+# Finding the minimum and maximum values in the array
+min_val = arr[0]
+max_val = arr[-1]
+
+# Displaying the minimum and maximum values
+print(f"Min = {min_val}, Max = {max_val}")
