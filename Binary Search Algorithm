@@ -1,0 +1,29 @@
+def binary_search(arr, x):
+    low = 0
+    high = len(arr) - 1
+    mid = 0
+
+    while low <= high:
+        mid = (high + low) // 2
+
+        if arr[mid] < x:
+            low = mid + 1
+        elif arr[mid] > x:
+            high = mid - 1
+        else:
+            return mid
+
+    return -1
+
+# Test cases
+arr1 = [3, 9, 14, 19, 25, 31, 42, 47, 53]
+x1 = 31
+print(binary_search(arr1, x1))  # Output: 5
+
+arr2 = [13, 19, 24, 29, 35, 41, 42]
+x2 = 42
+print(binary_search(arr2, x2))  # Output: 6
+
+arr3 = [20, 40, 60, 80, 100, 120]
+x3 = 60
+print(binary_search(arr3, x3))  # Output: 2
